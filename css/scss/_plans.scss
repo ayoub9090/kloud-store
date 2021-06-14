@@ -1,0 +1,96 @@
+.plan{
+    @include border-shadow;
+    padding:1.5em;
+
+    .price{
+        color:#174895;
+        font-size: 28px;
+        font-weight: 700;
+        width:100%;
+        text-align: center;
+    }
+
+    .period{
+        text-align: center;
+        display: block;
+        font-weight: 500;
+        margin-bottom:1.8em;
+    }
+    .green{
+        font-weight: 700;
+        color:#2a9374;
+        margin-bottom:1em;
+    }
+    &-features-list{
+        padding:0;
+        margin:0;
+        list-style: none;
+        li{
+            display: block;
+            margin-bottom:1em;
+            color:#000;
+            font-weight: 500;
+            .icon-check{
+                color:rgba(23,72,149, 0.6);
+                font-size: 20px;
+                vertical-align: middle;
+            }
+            .icon-close{
+                color:#cd5c5c;                ;
+                font-size: 12px;
+                vertical-align: middle;
+                font-weight: bold;
+            }
+
+            .kicon{
+                display: inline-flex;
+                justify-content: center;
+                width:26px;
+            }
+        }
+    }
+
+        .extra-features{
+            font-weight: 700;
+            color:#000;
+        }
+        position: relative;
+
+        &.with-offer{
+            border: solid 3px #174895;
+            .discount{
+                background: #174895;
+                color: white;
+                padding: 10px;
+                width: 75px;
+                height: 75px;
+                font-weight: 700;
+                border-radius: 0px 0px 0px 80px;
+                position: absolute;
+                right: -10px;
+                top: -10px;
+                span{
+                    position: absolute;
+                    top: 18px;
+                    right: 12px;
+                }
+            }
+            &:before{
+                content: '';
+                background-image: url(../img/cover-transform.svg);
+                background-size: 100% 100%;
+                width: 260px;
+                height: 260px;
+                display: block;
+                position: absolute;
+                left: -60px;
+                top: -76px;
+                
+            }
+            .btn-plan{
+                color: #fff;
+                background-color: #174895;
+            }
+        }
+    
+}

@@ -1,0 +1,71 @@
+.contact{
+    @include border-shadow;
+    padding:1.5em;
+    position: relative;
+    
+    &:before{
+        content:'';
+        background-image: url(../img/rocket.png);
+        display: block;
+        position: absolute;
+        width:180px;
+        height: 180px;
+        background-size: cover;
+        left:-220px;
+        top:130px;
+
+        @media(max-width:767px){
+            width: 142px;
+            height: 142px;
+            background-size: cover;
+            left: 0;
+            top: 60px;
+            opacity: 0.28;
+        }
+    }
+    &:after{
+        content:'';
+        background-image: url(../img/header_cover.svg);
+        display: block;
+            
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        background-size: contain;
+        right: -90px;
+        top: 30px;
+        background-repeat: no-repeat;
+        z-index: -1;
+
+        @media(max-width:767px){
+            background-repeat: no-repeat;
+        }
+    }
+    .form-label{
+        color:#272727;
+        font-size: 14px;
+    }
+    .form-control{
+        border:0;
+        border-bottom:2px solid rgba(86,86 ,86,0.7);
+        border-radius: 0;
+        padding-left:0;
+        padding-right:0;
+        outline: 0;
+        box-shadow: none;
+        &:focus{
+            border-color: #174895;
+        }
+    }
+    .select2-container--default .select2-selection--single{
+        border:0;
+        border-radius: 0;
+        border-bottom:2px solid rgba(86,86 ,86,0.7);
+        outline: 0;
+    }
+
+    &-section{
+        background-image:url(../img/waves.png);
+        background-size: cover;
+    }
+}
